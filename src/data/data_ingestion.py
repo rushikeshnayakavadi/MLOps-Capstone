@@ -1,4 +1,5 @@
 # data ingestion
+<<<<<<< HEAD
 
 import sys
 import os
@@ -21,6 +22,8 @@ import logging
 from src.logger import logging
 from src.connections import s3_connection
 
+=======
+>>>>>>> 90335a3926aad97e6fbc403bbbdfcb3c4e798cb0
 import numpy as np
 import pandas as pd
 pd.set_option('future.no_silent_downcasting', True)
@@ -30,7 +33,11 @@ from sklearn.model_selection import train_test_split
 import yaml
 import logging
 from src.logger import logging
+<<<<<<< HEAD
 from src.connections import s3_connection
+=======
+# from src.connections import s3_connection
+>>>>>>> 90335a3926aad97e6fbc403bbbdfcb3c4e798cb0
 
 
 def load_params(params_path: str) -> dict:
@@ -98,7 +105,6 @@ def main():
         # test_size = 0.2
         
         df = load_data(data_url='https://raw.githubusercontent.com/vikashishere/Datasets/refs/heads/main/data.csv')
-        
         final_df = preprocess_data(df)
         train_data, test_data = train_test_split(final_df, test_size=test_size, random_state=42)
         save_data(train_data, test_data, data_path='./data')

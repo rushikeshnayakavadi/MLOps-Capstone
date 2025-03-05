@@ -1,5 +1,4 @@
 # data preprocessing
-
 import sys
 import os
 
@@ -20,7 +19,6 @@ import logging
 # Now import src modules after sys.path update
 from src.logger import logging
 from src.connections import s3_connection
-
 import numpy as np
 import pandas as pd
 import os
