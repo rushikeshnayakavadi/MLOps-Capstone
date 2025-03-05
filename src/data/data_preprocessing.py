@@ -1,5 +1,26 @@
 # data preprocessing
 
+import sys
+import os
+
+# Get the absolute path of the project root
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+
+# Add project root to sys.path
+sys.path.append(PROJECT_ROOT)
+
+import numpy as np
+import pandas as pd
+import re
+
+from sklearn.model_selection import train_test_split
+import yaml
+import logging
+
+# Now import src modules after sys.path update
+from src.logger import logging
+from src.connections import s3_connection
+
 import numpy as np
 import pandas as pd
 import os
