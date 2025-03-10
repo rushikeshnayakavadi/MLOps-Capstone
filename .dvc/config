@@ -1,8 +1,5 @@
 [core]
     remote = myremote
+
 ['remote "myremote"']
-<<<<<<< HEAD
-    url = s3://mlopscapstone
-=======
     url = ../local_s3
->>>>>>> 90335a3926aad97e6fbc403bbbdfcb3c4e798cb0
